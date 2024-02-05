@@ -7,7 +7,7 @@ async function Dashboard() {
 	const user = await getUser();
 
 	if (!user) {
-		redirect("/");
+		redirect("/auth-callback?origin=dashbaord");
 	}
 
 	return <div>Dashboard</div>;
